@@ -15,7 +15,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}/alpine
+  IMAGE_NAME: ${{ github.repository }}
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
@@ -45,5 +45,5 @@ jobs:
         with:
           context: sample-packages/docker
           push: true
-          tags: 0.1
+          tags: "alpine:0.1"
           labels: ${{ steps.meta.outputs.labels }}
