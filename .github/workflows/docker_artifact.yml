@@ -45,5 +45,5 @@ jobs:
         with:
           context: sample-packages/docker
           push: true
-          tags: ${{ sha }}
+          tags: ${{ github.sha }}
           labels: ${{ steps.meta.outputs.labels }}
