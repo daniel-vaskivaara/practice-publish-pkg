@@ -8,11 +8,9 @@
 # You can also reference a tag or branch, but the action may change without warning.
 
 name: Create and publish a Docker image
-
 on:
-  push:
-    branches: ['main']
-
+  release:
+    types: [created]
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}/alpine
