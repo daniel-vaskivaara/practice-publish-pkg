@@ -1,16 +1,16 @@
 {
-  "name": "node-test-pgk",
+  "name": "@daniel-vaskivaara/practice-publish-pkg",
   "version": "1.0.0",
   "description": "test publishing a node pkg to Github",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": ["github", "publish", "packages"],
   "author": "Daniel Vaskivaara",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "https://github.com/daniel-vaskivaara/practice-publish-pkg.git"
+  },
+  "publishConfig": {
+    "@daniel-vaskivaara:registry": "https://npm.pkg.github.com"
   }
 }
