@@ -11,6 +11,6 @@
     "url": "https://github.com/daniel-vaskivaara/practice-publish-pkg.git"
   },
   "publishConfig": {
-    "@daniel-vaskivaara:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/daniel-vaskivaara"
   }
 }
