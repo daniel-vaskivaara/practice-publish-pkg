@@ -15,8 +15,8 @@ jobs:
         with:
           node-version: '16.x'
           # Defaults to the user or organization that owns the workflow file
-          # registry-url: 'https://npm.pkg.github.com'
-          # scope: '@daniel-vaskivaara'
+          registry-url: 'https://npm.pkg.github.com/daniel-vaskivaara'
+          scope: '@daniel-vaskivaara'
       - run: npm publish
         working-directory: sample-packages/npm
         env:
